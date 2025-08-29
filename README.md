@@ -48,7 +48,7 @@ Delivers an interpretable baseline recommender:
 | Aspect | Choice | Reason |
 |--------|--------|--------|
 | Baseline | Median | Reduces influence of user outliers |
-| Weight Denominator | Σ|sim| | Avoids cancellation of opposite-signed residuals |
+| Weight Denominator | `Σ|sim|` | Avoids cancellation of opposite-signed residuals |
 | Similarity Computation | On-demand | Memory efficient for sparse user–item space |
 | Data Structures | Dicts / inverted index | Quick overlap & neighbor filtering |
 | Evaluation | In-sample RMSE (prototype) | Fast feedback loop; future: temporal or CV splits |
